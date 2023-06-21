@@ -3,7 +3,15 @@
 // Copyright 2011-2012 MIT, All rights reserved
 // Released under the Apache License, Version 2.0
 // http://www.apache.org/licenses/LICENSE-2.0
-/**
- * Components for App Inventor runtime library.
- */
+
 package com.google.appinventor.components.runtime;
+
+/**
+ * Listener for distributing the Activity onStop() method to interested components.
+ *
+ * @author markf@google.com (Mark Friedman)
+ */
+
+public interface OnStopListener {
+  public void onStop();
+}
